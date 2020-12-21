@@ -29,11 +29,9 @@ function onClickedEstimatePrice(){
   var estPrice = document.getElementById("uiEstimatedPrice");
 
 
-<<<<<<< HEAD
-  var url = "/api/predict_home_price";
-=======
+
   var url = "/api/predict_home_price"; 
->>>>>>> 2ba8a31171762e2f83c9b0161984d78cd23ed50e
+
 
   $.post(url, {
       total_sqft: parseFloat(sqft.value),
