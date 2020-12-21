@@ -1,55 +1,100 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Banglore Home Price Prediction</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-	></script>
-    <script src="app.js"></script>
-	<link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manthan</title>
+
+    <!-- For tab-image -->
+    <link rel="shortcut icon" href="#">
+
+    
+    <link rel="stylesheet" href="/client/app.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
-<div class="img"></div>
-<form class="form">
-	<h2>Area (Square Feet)</h2>
-    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
-	<h2>BHK</h2>
-	<div class="switch-field">
-		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
-		<label for="radio-bhk-1">1</label>
-		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
-		<label for="radio-bhk-2">2</label>
-		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
-		<label for="radio-bhk-3">3</label>
-		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
-		<label for="radio-bhk-4">4</label>
-		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
-		<label for="radio-bhk-5">5</label>
-	</div>
-	</form>
-<form class="form">
-	<h2>Bath</h2>
-	<div class="switch-field">
-		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
-		<label for="radio-bath-1">1</label>
-		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
-		<label for="radio-bath-2">2</label>
-		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
-		<label for="radio-bath-3">3</label>
-		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
-		<label for="radio-bath-4">4</label>
-		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
-		<label for="radio-bath-5">5</label>
-	</div>
-		<h2>Location</h2>
-	<div>
-  <select class="location" name="" id="uiLocations">
-    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
-		<option>Electronic City</option>
-        <option>Rajaji Nagar</option>
-  </select>
-</div>
-	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
-	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+    <main class="site-main">
+        <section class="hero-section">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-12 col-md-12 col-xs-12 first-side"></div>
+                    <div class="col-lg-4 col-sm-12 col-md-12 col-xs-12 marLeft">
+                        <div class="left-side">
+                            <div class="left-side-image"></div>
+                            <h1 class="text-uppercase left-side-header">Find Your Price!</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12 right-side">
+                        <div class="container">
+                            <div class="jumbotron">
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleFormControlInput1">Area <span style="font-size: 0.8rem;color: grey;">(Sq Ft)</span></label>
+                                            <input type="area" class="form-control" id="area" placeholder="Area...">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleFormControlInput1">Rooms <span style="font-size: 0.8rem;color: grey;">(BHK)</span></label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Select Rooms!
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">1</a>
+                                                  <a class="dropdown-item" href="#">2</a>
+                                                  <a class="dropdown-item" href="#">3</a>
+                                                  <a class="dropdown-item" href="#">4</a>
+                                                  <a class="dropdown-item" href="#">5</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleFormControlInput1">Area <span style="font-size: 0.8rem;color: grey;">(Sq Ft)</span></label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Select Rooms!
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">1</a>
+                                                  <a class="dropdown-item" href="#">2</a>
+                                                  <a class="dropdown-item" href="#">3</a>
+                                                  <a class="dropdown-item" href="#">4</a>
+                                                  <a class="dropdown-item" href="#">5</a>
+                                                </div>
+                                              </div>    
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleFormControlInput1">Rooms <span style="font-size: 0.8rem;color: grey;">(BHK)</span></label>
+                                            <div class="dropdown">
+                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Select Rooms!
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                  <a class="dropdown-item" href="#">1</a>
+                                                  <a class="dropdown-item" href="#">2</a>
+                                                  <a class="dropdown-item" href="#">3</a>
+                                                  <a class="dropdown-item" href="#">4</a>
+                                                  <a class="dropdown-item" href="#">5</a>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary w-100 mt-3">Estimate Price!</button>
+                                </form>
+                            </div>
+                            <div class="jumbotron">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
 </body>
 </html>
