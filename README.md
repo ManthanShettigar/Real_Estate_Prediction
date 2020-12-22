@@ -15,7 +15,7 @@ Technology and tools used :
     8. Deployed on AWS EC2 Instance
 
 Final Result : 
-  Best Model: Linear Regression
+      Best Model: Linear Regression
   
   ![](image.png)
   
