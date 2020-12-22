@@ -45,7 +45,7 @@ function getBathValue() {
     console.log( "document loaded" );
     
     var url = "/api/get_location_names"; 
-    $.get(url,function(data, status) {
+    $.get(url,function(data) {
         console.log("got response for get_location_names request");
         if(data) {
             var locations = data.locations;
