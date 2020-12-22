@@ -1,3 +1,3 @@
 # Real_Estate_Prediction
 
-![](1.PNG)
+![](1.png)
