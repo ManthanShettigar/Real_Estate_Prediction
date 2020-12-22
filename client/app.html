@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="#">
 
     
-    <link rel="stylesheet" href="/client/app.css">
+    <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
@@ -31,61 +31,57 @@
                                     <div class="row">
                                         <div class="form-group col-md-6">
                                             <label for="exampleFormControlInput1">Area <span style="font-size: 0.8rem;color: grey;">(Sq Ft)</span></label>
-                                            <input type="area" class="form-control" id="area" placeholder="Area...">
+                                            <input type="area" class="form-control" id="uiSqft" name="Squareft" placeholder="Area..." value="1000">
+                                            <!-- <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000"> -->
                                         </div>
                                         <div class="form-group col-md-6">
                                             <label for="exampleFormControlInput1">Rooms <span style="font-size: 0.8rem;color: grey;">(BHK)</span></label>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                  Select Rooms!
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                  <a class="dropdown-item" href="#">1</a>
-                                                  <a class="dropdown-item" href="#">2</a>
-                                                  <a class="dropdown-item" href="#">3</a>
-                                                  <a class="dropdown-item" href="#">4</a>
-                                                  <a class="dropdown-item" href="#">5</a>
-                                                </div>
-                                              </div>
+                                            <div class="switch-field">
+                                                <input type="radio" id="radio-bhk-1" name="uiBHK" class="ml-2" value="1"/>
+                                                <label for="radio-bhk-1">1</label>
+                                                <input type="radio" id="radio-bhk-2" name="uiBHK" class="ml-2" value="2" checked/>
+                                                <label for="radio-bhk-2">2</label>
+                                                <input type="radio" id="radio-bhk-3" name="uiBHK" class="ml-2" value="3"/>
+                                                <label for="radio-bhk-3">3</label>
+                                                <input type="radio" id="radio-bhk-4" name="uiBHK" class="ml-2" value="4"/>
+                                                <label for="radio-bhk-4">4</label>
+                                                <input type="radio" id="radio-bhk-5" name="uiBHK" class="ml-2" value="5"/>
+                                                <label for="radio-bhk-5">5</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-md-6">
-                                            <label for="exampleFormControlInput1">Area <span style="font-size: 0.8rem;color: grey;">(Sq Ft)</span></label>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                  Select Rooms!
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                  <a class="dropdown-item" href="#">1</a>
-                                                  <a class="dropdown-item" href="#">2</a>
-                                                  <a class="dropdown-item" href="#">3</a>
-                                                  <a class="dropdown-item" href="#">4</a>
-                                                  <a class="dropdown-item" href="#">5</a>
-                                                </div>
-                                              </div>    
+                                            <label for="exampleFormControlInput1">Number of Bathrooms <span style="font-size: 0.8rem;color: grey;">(Sq Ft)</span></label>
+                                            <div class="switch-field">
+                                                <input type="radio" id="radio-bath-1" name="uiBathrooms" class="ml-2" value="1"/>
+                                                <label for="radio-bath-1">1</label>
+                                                <input type="radio" id="radio-bath-2" name="uiBathrooms" class="ml-2" value="2" checked/>
+                                                <label for="radio-bath-2">2</label>
+                                                <input type="radio" id="radio-bath-3" name="uiBathrooms" class="ml-2" value="3"/>
+                                                <label for="radio-bath-3">3</label>
+                                                <input type="radio" id="radio-bath-4" name="uiBathrooms" class="ml-2" value="4"/>
+                                                <label for="radio-bath-4">4</label>
+                                                <input type="radio" id="radio-bath-5" name="uiBathrooms" class="ml-2" value="5"/>
+                                                <label for="radio-bath-5">5</label>
+                                            </div>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="exampleFormControlInput1">Rooms <span style="font-size: 0.8rem;color: grey;">(BHK)</span></label>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                  Select Rooms!
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                  <a class="dropdown-item" href="#">1</a>
-                                                  <a class="dropdown-item" href="#">2</a>
-                                                  <a class="dropdown-item" href="#">3</a>
-                                                  <a class="dropdown-item" href="#">4</a>
-                                                  <a class="dropdown-item" href="#">5</a>
-                                                </div>
-                                              </div>
+                                            <label for="exampleFormControlInput1">Location <span style="font-size: 0.8rem;color: grey;">(BHK)</span></label>
+                                            <br><select class="location btn btn-primary dropdown-toggle" name="" id="uiLocations">
+                                                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                                                    <option>1st block jayanagar</option>
+                                                    
+                                              </select>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary w-100 mt-3">Estimate Price!</button>
+                                    <button type="button"  onclick="onClickedEstimatePrice()" class="btn btn-primary w-100 mt-3">Estimate Price!</button>
                                 </form>
                             </div>
-                            <div class="jumbotron">
+                            <div class="jumbotron text-center">
+                                <div id="uiEstimatedPrice" class="result"><h2 class="jumbo-text"></h2> </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -95,6 +91,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
 </html>

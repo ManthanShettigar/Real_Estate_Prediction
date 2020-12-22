@@ -179,10 +179,19 @@ body{
     margin:2% 0;
 }
 
-.jumbotron{
+.jumbotron {
     border-radius: 10px;
     background-color: white !important;
-    filter: drop-shadow(1px 5px 15px#c5c5c5);
+    filter: drop-shadow(1px 5px 15px#c5c5c5); 
+    
+    
+}
+
+.jumbo-text{
+  font-size: 10rem;
+  font-weight: bolder;
+  position: absolute;
+
 }
 
 .btn.btn-primary{
