@@ -5,6 +5,7 @@ import util
 app = Flask(__name__)
 
 
+
 @app.route('/get_location_names')
 def get_location_names():
     response = jsonify({
@@ -30,4 +31,4 @@ def predict_home_price():
 if __name__ == "__main__":
     util.load_saved_artifacts()
     print("starting Flask application on Home price prediction")
-    app.run(debug=True)
+    app.run(debug=True,)
